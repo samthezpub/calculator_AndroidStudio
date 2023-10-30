@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -53,6 +55,15 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+
+    public LinkedList<String> splitTextByOperators(char operator){
+        TextView nums = findViewById(R.id.textView);
+
+        String text = nums.getText().toString();
+        String[] parts = text.split(String.valueOf(operator));
+        LinkedList<String> list = new LinkedList<>(Arrays.asList(parts));
+        return list;
     }
 
     public void changeFontSize() {

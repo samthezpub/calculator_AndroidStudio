@@ -18,8 +18,8 @@
         android:layout_marginTop="204dp"
         android:backgroundTint="@color/greyApple"
 
-        android:text="C"
         android:onClick="clearNum"
+        android:text="C"
         android:textColor="@color/black"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,10 +30,10 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="switchOperator"
         android:layout_marginStart="16dp"
         android:layout_marginTop="204dp"
         android:backgroundTint="@color/greyApple"
+        android:onClick="switchOperator"
         android:text="@string/resource"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -59,11 +59,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="addNumToTextValue"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/blackApple"
+        android:onClick="addNumToTextValue"
         android:text="@string/seven"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -75,11 +75,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="addNumToTextValue"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/blackApple"
+        android:onClick="addNumToTextValue"
         android:text="@string/fiv"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -91,11 +91,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="addNumToTextValue"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/blackApple"
+        android:onClick="addNumToTextValue"
         android:text="@string/three"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -107,11 +107,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="addNumToTextValue"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/blackApple"
+        android:onClick="addNumToTextValue"
         android:text="2"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -123,11 +123,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="addNumToTextValue"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/blackApple"
+        android:onClick="addNumToTextValue"
         android:text="@string/_1"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -153,11 +153,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="addNumToTextValue"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/blackApple"
+        android:onClick="addNumToTextValue"
         android:text="@string/five"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -169,11 +169,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="addNumToTextValue"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/blackApple"
+        android:onClick="addNumToTextValue"
         android:text="@string/nine"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -185,11 +185,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="addNumToTextValue"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/blackApple"
+        android:onClick="addNumToTextValue"
         android:text="@string/six"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -201,11 +201,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="addNumToTextValue"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/blackApple"
+        android:onClick="addNumToTextValue"
         android:text="@string/eight"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -217,11 +217,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="AddOperator"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="204dp"
         android:backgroundTint="@color/orangeApple"
+        android:onClick="AddOperator"
         android:text="@string/division"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -233,11 +233,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="AddOperator"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/orangeApple"
+        android:onClick="AddOperator"
         android:text="@string/multiply"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -249,11 +249,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="AddOperator"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/orangeApple"
+        android:onClick="AddOperator"
         android:text="@string/minus"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -265,11 +265,11 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
-        android:onClick="AddOperator"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/orangeApple"
+        android:onClick="AddOperator"
         android:text="@string/plus"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -295,14 +295,14 @@
         android:layout_width="180dp"
         android:layout_height="86dp"
 
-        android:onClick="addNumToTextValue"
-
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="612dp"
         android:backgroundTint="@color/blackApple"
-
         android:bottomLeftRadius="10dp"
+
         android:bottomRightRadius="10dp"
+        android:onClick="addNumToTextValue"
         android:text="@string/_0"
         android:textAlignment="viewStart"
         android:textColor="@color/white"
@@ -316,8 +316,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="36dp"
         android:fontFamily="sans-serif-light"
         android:maxWidth="800dp"
         android:text="0"
