@@ -217,6 +217,8 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
+        android:onClick="AddOperator"
+
         android:layout_marginStart="16dp"
         android:layout_marginTop="204dp"
         android:backgroundTint="@color/orangeApple"
@@ -230,6 +232,8 @@
         android:id="@+id/button20"
         android:layout_width="80dp"
         android:layout_height="90dp"
+
+        android:onClick="AddOperator"
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
@@ -245,6 +249,8 @@
         android:layout_width="80dp"
         android:layout_height="90dp"
 
+        android:onClick="AddOperator"
+
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/orangeApple"
@@ -258,6 +264,8 @@
         android:id="@+id/button27"
         android:layout_width="80dp"
         android:layout_height="90dp"
+
+        android:onClick="AddOperator"
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
@@ -311,6 +319,7 @@
         android:layout_marginTop="52dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="sans-serif-light"
+        android:maxWidth="800dp"
         android:text="0"
         android:textColor="@color/white"
         android:textSize="100sp"
