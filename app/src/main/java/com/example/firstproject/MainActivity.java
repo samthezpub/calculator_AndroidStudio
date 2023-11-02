@@ -1,17 +1,13 @@
 package com.example.firstproject;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+import com.udojava.evalex.Expression;
+import java.math.BigDecimal;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,11 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void switchOperator(View view) {
-        TextView num = findViewById(R.id.textView);
 
-        Integer integerText = Integer.parseInt(num.getText().toString());
-        String switchedText = String.valueOf((-integerText));
-        num.setText(switchedText);
     }
 
     public void addNumToTextValue(View view) {
@@ -57,14 +49,6 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-    public LinkedList<String> splitTextByOperators(char operator){
-        TextView nums = findViewById(R.id.textView);
-
-        String text = nums.getText().toString();
-        String[] parts = text.split(String.valueOf(operator));
-        LinkedList<String> list = new LinkedList<>(Arrays.asList(parts));
-        return list;
-    }
 
     public void changeFontSize() {
         TextView num = findViewById(R.id.textView);
@@ -88,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
         CharSequence numText = num.getText();
         StringBuilder stringBuilder = new StringBuilder(numText);
 
-        char lastIndex = stringBuilder.charAt(stringBuilder.length()-1); // последний элемент строки
-        if (lastIndex !='*' && lastIndex != '/' && lastIndex != '-' && lastIndex != '+'){
+        char lastIndex = stringBuilder.charAt(stringBuilder.length() - 1); // последний элемент строки
+        if (lastIndex != '*' && lastIndex != '/' && lastIndex != '-' && lastIndex != '+') {
             stringBuilder.append(button.getText());
         }
 
@@ -97,4 +81,28 @@ public class MainActivity extends AppCompatActivity {
         String textWithOperator = stringBuilder.toString();
         num.setText(textWithOperator);
     }
+
+    public void equalsOperator(View view) {
+        TextView num = findViewById(R.id.textView);
+
+        String text = num.getText().toString();
+        String result = solveEquation(text);
+
+        num.setText(result);
+    }
+
+    public static String solveEquation(String equation) {
+        String result;
+        try {
+            Expression expression = new Expression(equation);
+            BigDecimal ans = expression.eval();
+            result = ans.toPlainString();
+        } catch (Exception e) {
+            result = "Ошибка: " + e.getMessage();
+        }
+        return result;
+    }
+
+
+
 }
